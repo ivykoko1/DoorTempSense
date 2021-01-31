@@ -12,7 +12,7 @@ Uno de sus principales síntomas, y  en el que se va a centrar el proyecto es la
 
 ###Descripción del proyecto:
 
-###Estructura a nivel físico:
+###Estructura a nivel físico: 
 
 ###Componentes necesarios:
 * ~~Sensor de infrarojos MLX90614ESF~~ *No estará en el proyecto final, pero era la idea principal*
