@@ -21,6 +21,9 @@ Viendo los síntomas, el único que parece objetivo y fácil de medir de manera 
 
 Cuando una persona se aproxime a la puerta, será detectado  por el sensor infrarrojos  el cual ~~activará varios láseres y receptores IR~~  indicará con leds azules que la  persona  posicione su dedo en el sensor. Cuando la lectura se estabilice,  se considerará si tiene fiebre o no,  si la  tiene los  led  se  volverán rojos y el  buzzer sonará. Si no,cambiarán su color a verde. Antes de continuar el cliente/individuo  deberá pulsar el botón  que lleva  cuenta del aforo. A la salida deberá pulsarlo de nuevo,  actualizando el contador.
 
+Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  clara visión del ambiente general del habitáculo,  pudiendo r educir el aforo si vemos que alguno de esos valores supera nuestros limites deseados
+
+
 ### Estructura a nivel físico (instalación física)
 
 El sistema consistiría de:
@@ -38,6 +41,8 @@ El sistema consistiría de:
 
 ### Componentes necesarios
 
+En su gran mayoría los componentes son de coste muy bajo, siendo la Raspberry Pi varias más cara que todo el resto junto para hacer  un   proyecto de tamaño medio  5-10 puertas
+
 * [~~Sensor de infrarojos MLX90614ESF~~](https://www.mouser.es/datasheet/2/734/MLX90614-Datasheet-Melexis-953298.pdf) *No estará en el proyecto final, pero era la idea principal*
 * ~~Diodo emisor laser infrarrojo~~
 * Sensor de temperatura [DS18B20](https://www.mouser.es/datasheet/2/256/DS18B20-370043.pdf)
@@ -51,4 +56,7 @@ El sistema consistiría de:
 ## Librerías de  terceros
 
 * [W1ThermSensor](https://pypi.org/project/w1thermsensor/)
+
+Librería para el sensor DS18b20 que implementa la interfaz 1-wire (una única conexion  a los puertos GPIO, a diferencia  de SPI o I2C que requieren 2  o más) para que no tengamos que implementar nosotros el protocolo.
+
 * [Adafruit_Python_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
