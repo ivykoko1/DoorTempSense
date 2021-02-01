@@ -6,7 +6,8 @@
 
 ## Sistema reducción de riesgo de contagios aplicado al control de aforos
 
-### Descripción del problema:
+### Descripción del problem
+
 La pandemia de COVID-19 es una pandemia causada por por coronavirus cuyo afente principal es el virus SARS-CoV-2 la cual sigue estando activa a día de hoy (enero de 2021).
 
 Uno de sus principales síntomas, y  en el que se va a centrar el proyecto es la fiebre, por lo tanto mediante un conglomerado de sensores, actuadores e HMIs (Human Machine Interface)
@@ -22,7 +23,6 @@ Viendo los síntomas, el único que parece objetivo y fácil de medir de manera 
 Cuando una persona se aproxime a la puerta, será detectado  por el sensor infrarrojos  el cual ~~activará varios láseres y receptores IR~~  indicará con leds azules que la  persona  posicione su dedo en el sensor. Cuando la lectura se estabilice,  se considerará si tiene fiebre o no,  si la  tiene los  led  se  volverán rojos y el  buzzer sonará. Si no,cambiarán su color a verde. Antes de continuar el cliente/individuo  deberá pulsar el botón  que lleva  cuenta del aforo. A la salida deberá pulsarlo de nuevo,  actualizando el contador.
 
 Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  clara visión del ambiente general del habitáculo,  pudiendo r educir el aforo si vemos que alguno de esos valores supera nuestros limites deseados
-
 
 ### Estructura a nivel físico (instalación física)
 
