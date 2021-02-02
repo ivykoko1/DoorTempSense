@@ -62,7 +62,7 @@ En su gran mayoría los componentes son de coste muy bajo, siendo la Raspberry P
 * Pulsadores capacitivos (no es necesario hacer presión sobre ellos.)
 * Sensor de humedad [DHT11](https://www.alldatasheet.com/datasheet-pdf/pdf/1132088/ETC2/DHT11.html) o DHT22 (son iguales, cambia la resolución de cada uno)
 
-Para conectar todos estos sensores a nuestra Raspberry más facilmente utilizaremos el [Grove Base Hat de Seeed](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_RaspberryPi/img/BaseHat.jpg)
+Para conectar todos estos sensores a nuestra Raspberry más facilmente utilizaremos el Grove Base Hat de Seeed ![grovebase](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_RaspberryPi/img/BaseHat.jpg)
 
 ## Librerías de  terceros
 
