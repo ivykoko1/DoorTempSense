@@ -24,6 +24,18 @@ Cuando una persona se aproxime a la puerta, será detectado  por el sensor infra
 
 Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  clara visión del ambiente general del habitáculo,  pudiendo r educir el aforo si vemos que alguno de esos valores supera nuestros limites deseados
 
+### Cómo instalar DoorTempSense
+1. Ejecutar *raspi-config* y habilitar las interfaces I2C, UART, GPIO y OneWire
+2. Primero deberemos instalar todas las dependencias y librerías:
+        
+        ```
+        $ sudo apt install python-pip python3-pip
+        $ curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s  
+        $ sudo apt install apache2 php libapache2-mod-php -y #Instalamos Apache y PHP para la interfaz web.
+        ```
+
+3. 
+
 ### Estructura a nivel físico (instalación física)
 
 El sistema consistiría de:
@@ -78,15 +90,4 @@ Como demostración, se construirá un prototipoe
 
 * [Grove Hat Library, Grove Ultrasonic Ranger](https://github.com/Seeed-Studio/grove.py)
 
-    *Instalación completa, con todas las  librerías:*
-
-    **OJO, hay que instalar pip y pip3 antes o fallará.**
     
-    ```
-    $ sudo apt install python-pip
-
-    $ sudo apt install python3-pip
-
-    curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s  
-    
-    ```
