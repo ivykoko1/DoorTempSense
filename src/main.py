@@ -7,22 +7,21 @@ def main():
     aforo = 0
     btnEntrada = Button(12)
     aforoMaximo = 20
-    def on_press(t):
-        if (aforoMaximo - aforo == 0):
-            return
-        print('Button is pressed')
-        while True:
-            print('Aforo {0}, aforo restante {1}', aforo, (aforoMaximo - aforo))
-            if(aforo < aforoMaximo):
-                if(checkProximity() < 50.0):
-                    if(readTemperatureAndHumidity() < 37):
-                        #LEDS VERDES
-                        aforo = aforo + 1
-                    else:
-                        #LEDS ROJOS
-                        print('CAUTION: PUEDE TENER SARS COV 2, NO ENTRAR')
-                        #BUZZER SUENA
-    btnEntrada.on_press = on_press
+    while True:
+        def on_press(t):
+            print('Button is pressed')
+            while True:
+                print('Aforo {0}, aforo restante {1}', aforo, (aforoMaximo - aforo))
+                if(aforo < aforoMaximo):
+                    if(checkProximity() < 50.0):
+                        if(readTemperatureAndHumidity() < 37):
+                            #LEDS VERDES
+                            aforo = aforo + 1
+                        else:
+                            #LEDS ROJOS
+                            print('CAUTION: PUEDE TENER SARS COV 2, NO ENTRAR')
+                            #BUZZER SUENA
+        btnEntrada.on_press = on_press
 
    
 def checkProximity():
