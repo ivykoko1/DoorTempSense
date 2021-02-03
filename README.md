@@ -62,16 +62,25 @@ En su gran mayoría los componentes son de coste muy bajo, siendo la Raspberry P
 * Pulsadores capacitivos (no es necesario hacer presión sobre ellos.)
 * Sensor de humedad [DHT11](https://www.alldatasheet.com/datasheet-pdf/pdf/1132088/ETC2/DHT11.html) o DHT22 (son iguales, cambia la resolución de cada uno)
 
-Para conectar todos estos sensores a nuestra Raspberry más facilmente utilizaremos el Grove Base Hat de Seeed ![grovebase](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_RaspberryPi/img/BaseHat.jpg)
+## Demontración práctica
+
+Como demostración, se construirá un prototipoe
 
 ## Librerías de  terceros
 
 * [W1ThermSensor](https://pypi.org/project/w1thermsensor/)
 
-    Librería para el sensor DS18b20 que implementa la interfaz 1-wire (una única conexion  a los puertos GPIO, a diferencia  de SPI o I2C que requieren 2  o más) para que no tengamos que implementar nosotros el protocolo.
+    Librería para el sensor DS18b20 que implementa la interfaz 1-wire (una única conexión a los puertos GPIO, a diferencia  de SPI o I2C que requieren 2 o más) para que no tengamos que implementar nosotros el protocolo.
 
 * [Adafruit_Python_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
 
     Librería para los sensores DHT11/22 de Adafruit.
-
+s
 * [Grove Hat Library, Grove Ultrasonic Ranger](https://github.com/Seeed-Studio/grove.py)
+
+    *Instalación completa, con todas las  librerías:*
+
+    **OJO, tenemos que instalar pip antes  o fallará.**
+    ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```
+
+    ```curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -```
