@@ -75,14 +75,18 @@ Como demostración, se construirá un prototipoe
 * [Adafruit_Python_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
 
     Librería para los sensores DHT11/22 de Adafruit.
-s
+
 * [Grove Hat Library, Grove Ultrasonic Ranger](https://github.com/Seeed-Studio/grove.py)
 
     *Instalación completa, con todas las  librerías:*
 
     **OJO, hay que instalar pip y pip3 antes o fallará.**
     
-    ```$ sudo apt install python-pip
-    $ sudo apt install python3-pip```
+    ```
+    $ sudo apt install python-pip
 
-    ```curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -```
+    $ sudo apt install python3-pip
+
+    curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s  
+    
+    ```
