@@ -1,10 +1,12 @@
 from grove.gpio import GPIO
 from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 import seeed_dht
+import time
 
 def checkProximity():
-    sonar = GroveUltrasonicRanger(5)
-    print(sonar.get_distance())
+    usonic = GroveUltrasonicRanger(5)
+    print(usonic.get_distance())
+    time.sleep(1)
 
 def readTemperatureAndHumidity(): 
     sensor_dht11 = seeed_dht.DHT("11", 22)
