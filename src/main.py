@@ -8,11 +8,11 @@ def main():
     btnEntrada = Button(12)
     aforoMaximo = 20
     def on_press(t):
-        if aforo == aforoMaximo - aforo:
+        if (aforoMaximo - aforo == 0):
             return
         print('Button is pressed')
         while True:
-            print('Aforo {0}, aforo restante{1}', aforo, (aforoMaximo - aforo))
+            print('Aforo {0}, aforo restante {1}', aforo, (aforoMaximo - aforo))
             if(aforo < aforoMaximo):
                 if(checkProximity() < 50.0):
                     if(readTemperatureAndHumidity() < 37):
