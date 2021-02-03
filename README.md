@@ -38,7 +38,8 @@ Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  c
 sudo apt install python python3 python-pip python3-pip -y
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s
 #Instalamos Apache y PHP para la interfaz web.+
-sudo apt install apache2 php libapache2-mod-php -y  
+sudo apt install apache2 php libapache2-mod-php -y
+pip install Seeed_Python_DHT
 ```
 
 ### Estructura a nivel físico (instalación física)
