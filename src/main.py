@@ -5,7 +5,7 @@ import seeed_dht
 def readTemperatureAndHumidity(): 
     sensor_temp = seeed_dht.DHT("11", 12)
     counts = 0
-    sum = {0, 0}
+    sum = [0,0]
     while counts < 5:
         humi, temp = sensor_temp.read()
         if not humi is None:
