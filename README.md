@@ -7,8 +7,7 @@
 
  Aun así, estas funcionalidades serán listadas e implementadas en  el futuro, ya que el proyecto es un módulo opcional (aunque independiente) a un proyecto en desarrollo.
 
-
-### Descripción del problem
+### Descripción del problema
 
 La pandemia de COVID-19 es una pandemia causada por por coronavirus cuyo afente principal es el virus SARS-CoV-2 la cual sigue estando activa a día de hoy (enero de 2021).
 
@@ -62,7 +61,7 @@ En este caso, el proyecto consta de dos capas. Por una parte, está la capa fís
 
 * Para la parte computacional, la controladora de sensores, etc usaremos Python que se ejecutará constantemente, es decir será un *daemon*
 
-* Por otro lado, 
+* Por otro lado,
 
 ### Descripción funcional  de el software
 
