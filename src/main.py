@@ -4,15 +4,15 @@ import seeed_dht
 import time
 
 def main():
+    aforo = 0
     btnEntrada = Button(12)
     aforoMaximo = 20
-    aforo = 0
     def on_press(t):
         if aforo == aforoMaximo - aforo:
             return
         print('Button is pressed')
         while True:
-            print('Aforo {0}, aforo máximo', aforo, (aforoMaximo - aforo))
+            print('Aforo {0}, aforo restante{1}', aforo, (aforoMaximo - aforo))
             if(aforo < aforoMaximo):
                 if(checkProximity() < 50.0):
                     if(readTemperatureAndHumidity() < 37):
