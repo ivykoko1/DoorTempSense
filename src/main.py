@@ -1,4 +1,3 @@
-from grove.gpio import 
 from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 from grove.button import Button
 import seeed_dht
