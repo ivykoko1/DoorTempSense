@@ -36,8 +36,7 @@ Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  c
 sudo apt install python python3 python-pip python3-pip -y
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s
 #Instalamos Apache y PHP para la interfaz web.+
-sudo apt install apache2 php libapache2-mod-php -y
-        
+sudo apt install apache2 php libapache2-mod-php -y  
 ```
 
 ### Estructura a nivel físico (instalación física)
@@ -57,15 +56,17 @@ El sistema consistiría de:
 
 ![Raspberry Pi Grove Base Hat](https://files.seeedstudio.com/wiki/Grove_Base_Hat_for_Raspberry_Pi/img/main.jpg)
 
-### Estructura a bajo nivel (software)
+### Descripción funcional  de el software
 
 En este caso, el proyecto consta de dos capas. Por una parte, está la capa física  (que se encargará de tanto sensores  como actuadores) y la capa servidor o cloud.
 
-* Para la parte computacional, la controladora de sensores, etc usaremos Python que se ejecutará constantemente, es decir será un *daemon*
+* Para la parte computacional, la controladora de sensores, etc usaremos Python que se ejecutará constantemente, es decir será un *daemon*.
 
-* Por otro lado,
+* Por otro lado, con un servidor http (apache2) una interfaz web, la cual actualizará python.
 
-### Descripción funcional  de el software
+Gracias a las librerías y la simplicidad de Python, se puede escribir la lógica del software rápidamente sin perder detalles respecto a lenguajes de más bajo nivel.
+
+Si se quisiera añadir más complejidad a la web podríamos prescindir de apache2, con librerias como [Flask](https://flask.palletsprojects.com/en/1.1.x/) / [Django](https://www.djangoproject.com/). Como el prototipo no necesita tener opciones más avanzadas y solamente modi ficará los valores de un fichero CSV  (Comma separated)
 
 ### Componentes necesarios
 
