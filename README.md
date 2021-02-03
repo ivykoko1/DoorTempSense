@@ -31,12 +31,14 @@ Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  c
 
 2. Install needed packages
 
-    ```bash
-            sudo apt install python-pip python3-pip
-            curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s
-            sudo apt install apache2 php libapache2-mod-php -y #Instalamos Apache y PHP para la interfaz web.+
-            
-    ```
+```bash
+#Python deberia venir instalado en RPI OS, pero por lo menos para mi pip no estaba,  asi que instalmos por si acaso
+sudo apt install python python3 python-pip python3-pip -y
+curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s
+#Instalamos Apache y PHP para la interfaz web.+
+sudo apt install apache2 php libapache2-mod-php -y
+        
+```
 
 ### Estructura a nivel físico (instalación física)
 
