@@ -3,7 +3,7 @@ from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 import seeed_dht
 
 def readTemperatureAndHumidity(): 
-    sensor_dht11 = seeed_dht("11", 12)
+    sensor_dht11 = seeed_dht.DHT("11", 12)
     counts = 0
     sum = {0, 0}
     while counts < 5:
