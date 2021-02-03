@@ -3,7 +3,7 @@ from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 import seeed_dht
 
 def checkProximity():
-    sonar = GroveUltrasonicRanger(5, 6)
+    sonar = GroveUltrasonicRanger(5)
     print(sonar.get_distance())
 
 def readTemperatureAndHumidity(): 
@@ -24,7 +24,7 @@ def main():
    while True:
          readTemperatureAndHumidity()
          checkProximity()
-         
+
 if __name__ == '__main__':
     main()
 
