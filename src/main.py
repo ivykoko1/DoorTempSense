@@ -1,6 +1,5 @@
 from grove.gpio import GPIO
 from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
-from grove.grove_temperature_humidity_sensor import 
 import seeed_dht
 
 def readTemperatureAndHumidity(): 
