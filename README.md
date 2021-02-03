@@ -74,11 +74,11 @@ En este caso, el proyecto consta de dos capas. Por una parte, está la capa fís
 
 Gracias a las librerías y la simplicidad de Python, se puede escribir la lógica del software rápidamente sin perder detalles respecto a lenguajes de más bajo nivel.
 
-Si se quisiera añadir más complejidad a la web podríamos prescindir de apache2, con librerias como [Flask](https://flask.palletsprojects.com/en/1.1.x/) / [Django](https://www.djangoproject.com/). Como el prototipo no necesita tener opciones más avanzadas y solamente modi ficará los valores de un fichero CSV  (Comma separated)
+Si se quisiera añadir más complejidad a la web podríamos prescindir de apache2, con librerias como [Flask](https://flask.palletsprojects.com/en/1.1.x/) / [Django](https://www.djangoproject.com/). Como el prototipo no necesita tener opciones más avanzadas y solamente modificará los valores de un fichero CSV  (Comma separated)
 
-### Componentes necesarios
+### Componentes a utilizar
 
-En su gran mayoría los componentes son de coste muy bajo, siendo la Raspberry Pi varias más cara que todo el resto junto para hacer  un   proyecto de tamaño medio  5-10 puertas
+En su gran mayoría los componentes son de coste muy bajo, siendo la Raspberry Pi varias veces más cara que todo el resto junto para hacer un proyecto de tamaño pequeño-medio  5-10 puertas
 
 * [~~Sensor de infrarojos MLX90614ESF~~](https://www.mouser.es/datasheet/2/734/MLX90614-Datasheet-Melexis-953298.pdf) No estará en el proyecto final, *pero era la idea principal*
 * ~~Diodo emisor laser infrarrojo~~
@@ -93,7 +93,9 @@ En su gran mayoría los componentes son de coste muy bajo, siendo la Raspberry P
 
 ## Demontración práctica
 
-Como demostración, se construirá un prototipoe
+Como demostración, se construirá un prototipo simple, sin instalar, sólo una demo de funcionamiento. Ya que no disponemos del sensor de temperaatura IR tendremos que usar uno analógico tradicional, por lo que habrá que hacer contacto directo con él con nuestro cuerpo.
+
+Sera una miniaturización o prueba de concepto.
 
 ## Librerías de  terceros
 
@@ -101,4 +103,6 @@ Como demostración, se construirá un prototipoe
 
     Librería para el sensor DS18B20 que implementa la interfaz 1-wire (una única conexión a los puertos GPIO, a diferencia  de SPI o I2C que requieren 2 o más)  e interpreta los datos recibidos por el sensor, para no tener que reinventar la rueda.
 
-* [Grove Hat Library (todos los sensores menos el DS18B20)](https://github.com/Seeed-Studio/grove.py)
+* [Grove Hat Library (todos los sensores menos el DS18B20 Y DHT11)](https://github.com/Seeed-Studio/grove.py)
+
+* [seed_dht](https://github.com/Seeed-Studio/Seeed_Python_DHT)
