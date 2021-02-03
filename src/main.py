@@ -7,7 +7,7 @@ def readTemperatureAndHumidity():
     counts = 0
     sum = [0,0]
     while counts < 5:
-        humi, temp = sensor_temp.read()
+        humi, temp = sensor_temp.read() 
         if not humi is None:
             #print('DHT{0}, humidity {1:.1f}%, temperature {2:.1f}*'.format(sensor_temp.dht_type, humi, temp))
             counts += 1
