@@ -23,7 +23,8 @@ def readTemperatureAndHumidity():
 def main():
    while True:
          readTemperatureAndHumidity()
-
+         checkProximity()
+         
 if __name__ == '__main__':
     main()
 
