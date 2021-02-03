@@ -1,6 +1,8 @@
 
 # Sistema reducción de riesgo de contagios aplicado al control de aforos
 
+## ![DoorTempSens](img\hat_ultrasound.jpg)
+
 ## Trabajo final IoT deIvan Sanchez
 
  Este es el trabajo final para la asignatura Desarrollo de Aplicaciones para Internet de las Cosas, debido a motivos personales su funcionalidad se ha tenido que reducir ya que el tiempo ha sido escaso  y ha habido falta de recursos.
@@ -54,7 +56,13 @@ El sistema consistiría de:
 
 ### Raspberry Grove Base Hat
 
-![Raspberry Pi Grove Base Hat](https://files.seeedstudio.com/wiki/Grove_Base_Hat_for_Raspberry_Pi/img/main.jpg)
+![Raspberry Pi Grove Base Hat](img\hat.jpg)
+
+![Ejemplo de conectió de un módulo *grove*](img\hat_ultrasound.jpg)
+
+![Raspberry Pi Grove Base Hat Overview and breakdown](img\hat_ultrasound.jpg)
+
+Detallado de las diferentes interfaces disponibles en el *Hat*
 
 ### Descripción funcional  de el software
 
@@ -91,6 +99,6 @@ Como demostración, se construirá un prototipoe
 
 * [W1ThermSensor](https://pypi.org/project/w1thermsensor/)
 
-    Librería para el sensor DS18b20 que implementa la interfaz 1-wire (una única conexión a los puertos GPIO, a diferencia  de SPI o I2C que requieren 2 o más)  e interpreta los datos recibidos por el sensor, para no tener que reinventar la rueda.
+    Librería para el sensor DS18B20 que implementa la interfaz 1-wire (una única conexión a los puertos GPIO, a diferencia  de SPI o I2C que requieren 2 o más)  e interpreta los datos recibidos por el sensor, para no tener que reinventar la rueda.
 
 * [Grove Hat Library (todos los sensores menos el DS18B20)](https://github.com/Seeed-Studio/grove.py)
