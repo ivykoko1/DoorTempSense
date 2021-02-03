@@ -6,11 +6,11 @@ import time
 
 def main():
     btnEntrada = Button(12)
-    global aforoMaximo
     aforoMaximo = 20
-    global aforo 
     aforo = 0
     def on_press(t):
+        if aforo == aforoMaximo - aforo:
+            return
         print('Button is pressed')
         while True:
             print('Aforo {0}, aforo máximo', aforo, (aforoMaximo - aforo))
