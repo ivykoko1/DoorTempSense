@@ -81,6 +81,6 @@ s
     *Instalación completa, con todas las  librerías:*
 
     **OJO, tenemos que instalar pip antes  o fallará.**
-    ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```
+    ``` $curl https://bootstrap.pypa.io/get-pip.py -o     $ sudo apt install python_pip ```
 
     ```curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -```
