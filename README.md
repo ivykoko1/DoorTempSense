@@ -27,11 +27,13 @@ Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  c
 ### Cómo instalar DoorTempSense
 1. Ejecutar *raspi-config* y habilitar las interfaces I2C, UART, GPIO y OneWire
 2. Primero deberemos instalar todas las dependencias y librerías:
+
         ```
         $ sudo apt install python-pip python3-pip
         $ curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s  
         $ sudo apt install apache2 php libapache2-mod-php -y #Instalamos Apache y PHP para la interfaz web.
         ```
+        
 3. HS
 
 ### Estructura a nivel físico (instalación física)
