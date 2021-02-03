@@ -22,19 +22,17 @@ Viendo los síntomas, el único que parece objetivo y fácil de medir de manera 
 
 Cuando una persona se aproxime a la puerta, será detectado  por el sensor infrarrojos  el cual ~~activará varios láseres y receptores IR~~  indicará con leds azules que la  persona  posicione su dedo en el sensor. Cuando la lectura se estabilice,  se considerará si tiene fiebre o no,  si la  tiene los  led  se  volverán rojos y el  buzzer sonará. Si no,cambiarán su color a verde. Antes de continuar el cliente/individuo  deberá pulsar el botón  que lleva  cuenta del aforo. A la salida deberá pulsarlo de nuevo,  actualizando el contador.
 
-Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  clara visión del ambiente general del habitáculo,  pudiendo r educir el aforo si vemos que alguno de esos valores supera nuestros limites deseados
+Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  clara visión del ambiente general del habitáculo,  pudiendo reducir el aforo si vemos que alguno de esos valores supera nuestros limites deseados.
 
 ### Cómo instalar DoorTempSense
 1. Ejecutar *raspi-config* y habilitar las interfaces I2C, UART, GPIO y OneWire
 2. Primero deberemos instalar todas las dependencias y librerías:
-        
         ```
         $ sudo apt install python-pip python3-pip
         $ curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s  
         $ sudo apt install apache2 php libapache2-mod-php -y #Instalamos Apache y PHP para la interfaz web.
         ```
-
-3. 
+3. HS
 
 ### Estructura a nivel físico (instalación física)
 
@@ -50,6 +48,8 @@ El sistema consistiría de:
 * Una Raspberry Pi, junto al *Grove hat (modulo para facilitar la conexión a sensores y actuadores mediante conectores JST-HX, en este caso 4s, ya que  dispoenmos  de cuatro conexiones de 2.5mm  [Grove Base Hat V1](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi)* (que se encargará de controlar todos los sensores), y mostrar en el puerto  1337 de su IP  el aforo actual y máximo.
 
 ### Raspberry Grove Base Hat
+
+
 
 ### Estructura a bajo nivel (software)
 
