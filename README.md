@@ -51,7 +51,7 @@ El sistema consistiría de:
 
 ### Raspberry Grove Base Hat
 
-
+![](https://files.seeedstudio.com/wiki/Grove_Base_Hat_for_Raspberry_Pi/img/main.jpg)
 
 ### Estructura a bajo nivel (software)
 
