@@ -37,7 +37,7 @@ Además, como contamos con el DHT11 (temperatura & humedad) podemos tener una  c
 #Python deberia venir instalado en RPI OS, pero por lo menos para mi pip no estaba,  asi que instalmos por si acaso
 sudo apt install python python3 python-pip python3-pip -y
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s
-#Instalamos Apache y PHP para la interfaz web.+
+#Instalamos Apache y PHP par    a la interfaz web.+
 sudo apt install apache2 php libapache2-mod-php -y
 pip install Seeed_Python_DHT
 ```
@@ -53,7 +53,7 @@ El sistema consistiría de:
 * Pulsador de entrada y de salida
 * Sensor de humedad para comprobar que el habitáculo no  se está humedeciendo demasiado debido a la sobrecarga de visitantes.
 * Buzzer para avisar
-* Una Raspberry Pi, junto al *Grove hat (modulo para facilitar la conexión a sensores y actuadores mediante conectores JST-HX, en este caso 4s, ya que  dispoenmos  de cuatro pines de 2.5mm  [Grove Base Hat V1](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi)* (que se encargará de controlar todos los sensores), y mostrar en el puerto  1337 de su IP  el aforo actual y máximo.
+* Una Raspberry Pi, junto al *Grove hat (modulo para facilitar la conexión a sensores y actuadores mediante conectores JST-HX, en este caso 4s, ya que  dispoenmos  de cuatro pines de 2.5mm  [Grove Base Hat V1](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi)* que se encargará de controlar todos los sensores, y mostrar en el puerto  1337 de su IP  el aforo actual y máximo.
 
 ### Raspberry Grove Base Hat
 
