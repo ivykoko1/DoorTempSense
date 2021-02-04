@@ -3,7 +3,7 @@
 
 ## DoorTempSense ![](img/hat_ultrasound.jpg)
 
-## Trabajo final IoT deIvan Sanchez
+## Trabajo final IoT de Ivan Sanchez
 
  Este es el trabajo final para la asignatura Desarrollo de Aplicaciones para Internet de las Cosas, debido a motivos personales su funcionalidad se ha tenido que reducir ya que el tiempo ha sido escaso  y ha habido falta de recursos.
 
@@ -57,11 +57,11 @@ El sistema consistiría de:
 
 ### Raspberry Grove Base Hat
 
-![Raspberry Pi Grove Base Hat](img\hat.jpg)
+![Raspberry Pi Grove Base Hat](img/hat.jpg)
 
-![Ejemplo de conectió de un módulo *grove*](img\hat_ultrasound.jpg)
+![Ejemplo de conectxió  de un módulo *grove*](img/hat_ultrasound.jpg)
 
-![Raspberry Pi Grove Base Hat Overview and breakdown](img\hat_ultrasound.jpg)
+![Raspberry Pi Grove Base Hat Overview and breakdown](imgç7hat_ultrasound.jpg)
 
 Detallado de las diferentes interfaces disponibles en el *Hat*
 
