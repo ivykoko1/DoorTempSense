@@ -1,7 +1,7 @@
 
 # Sistema reducción de riesgo de contagios aplicado al control de aforos
 
-## ![DoorTempSens](img\hat_ultrasound.jpg)
+## DoorTempSense ![](img/hat_ultrasound.jpg)
 
 ## Trabajo final IoT deIvan Sanchez
 
